@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.RealEstateManager" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#9BAAD7</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/lightText</item>
+        <item name="android:textColor">@color/lightText</item>
+        <item name="android:colorBackground">@color/background</item>
+        <!-- Status bar color. -->
+        <item name="colorPrimaryDark">@color/background</item>
+        <!-- Drawer -->
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+        <!-- Theme font -->
+        <item name="android:fontFamily">@font/robotocondensed_light</item>
+        <item name="fontFamily">@font/robotocondensed_light</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents">
+        <item name="android:textColorPrimary">@color/lightText</item>
+        <item name="android:textColorSecondary">@color/lightText</item>
+        <item name="actionMenuTextColor">@color/primaryColor</item>
+    </style>
+
+    <style name="Theme.RealEstateManager.OpenPhoto" parent="Theme.MaterialComponents">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/lightText</item>
+        <item name="android:textColor">@color/lightText</item>
+        <!-- Action bar. -->
+        <item name="actionBarTheme">@style/ActionBarTheme</item>
+        <!-- Status bar color. -->
+        <item name="colorPrimaryDark">@color/background</item>
+        <!-- Drawer -->
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+        <!-- Theme font -->
+        <item name="android:fontFamily">@font/robotocondensed_light</item>
+        <item name="fontFamily">@font/robotocondensed_light</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="ThemeOverlay.MaterialComponents">
+        <item name="android:textColorPrimary">@color/lightText</item>
+        <item name="android:textColorSecondary">@color/lightText</item>
+        <item name="actionMenuTextColor">@color/primaryColor</item>
+        <item name="background">@color/background</item>
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="TransparentBottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="colorPrimary">#E65A5A69</item>
+    </style>
+</resources>

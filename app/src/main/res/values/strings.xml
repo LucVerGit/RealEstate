@@ -1,3 +1,103 @@
 <resources>
+    <!-- general -->
     <string name="app_name">Real Estate Manager</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Property detail fragment -->
+    <string name="media_title">Media</string>
+    <string name="description_title">Description</string>
+    <string name="surface">Surface</string>
+    <string name="not_provided">-</string>
+
+    <!-- Menus -->
+    <string name="add_property">Add property</string>
+    <string name="edit_property">Edit property</string>
+    <string name="search_property">Search property</string>
+
+    <!-- nav_graph.xml -->
+    <string name="property_detail">Property detail</string>
+    <string name="new_property">New property</string>
+
+    <!-- dialog_add_realtor.xml -->
+    <string name="title_new_realtor_dialog">Add a new realtor</string>
+    <string name="hint_first_name_add_realtor_dialog">First name *</string>
+    <string name="hint_last_name_add_realtor_dialog">Last name *</string>
+    <string name="add_button_add_realtor_dialog">Add</string>
+    <string name="cancel_button_add_realtor_dialog">Cancel</string>
+
+    <!-- Add photo fragment -->
+    <string name="add_photo_fragment_title">Start by adding photos of the property …</string>
+    <string name="photo_title">Photo title *</string>
+    <string name="select_photo">Select photo</string>
+
+    <!-- Add detail fragment -->
+    <string name="add_detail_fragment_title">… and finally complete the property\'s detail.</string>
+    <string name="type">Type</string>
+    <string name="price">Price</string>
+    <string name="square_meters">Square meters</string>
+    <string name="rooms">Rooms</string>
+    <string name="points_of_interest">Point(s) of interest</string>
+    <string name="address">Address</string>
+    <string name="entry_date">Entry date</string>
+    <string name="sale_date">Sale date</string>
+    <string name="realtor">Realtor</string>
+    <string name="description">Description</string>
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="new_property_created">New property created.</string>
+    <string name="property_updated">Property updated.</string>
+    <string name="realtor_already_exists">%1$s already exists…</string>
+
+    <!-- Add address fragment -->
+    <string name="add_address_fragment_title">… then set the property\'s address detail …</string>
+    <string name="zip_code">Zip code</string>
+    <string name="city">City</string>
+    <string name="road_name">Road name</string>
+    <string name="number">Number</string>
+    <string name="complement">Complement</string>
+    <string name="alert_title">Information might be missing…</string>
+    <string name="alert_message">One or more important fields are not completed, continue anyway ?</string>
+    <string name="alert_positive">Continue</string>
+    <string name="alert_negative">Edit</string>
+
+    <!-- dialog_add_point_of_interest.xml -->
+    <string name="add_a_point_of_interest">Add a point of interest</string>
+    <string name="points_of_interest_type">Type *</string>
+
+    <!-- Navigation drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Bottom navigation view -->
+    <string name="property_list">Property list</string>
+    <string name="map_view">Map view</string>
+
+    <!-- Search modal fragment -->
+    <string name="search_properties">Search properties</string>
+    <string name="type_filter">Type filter</string>
+    <string name="city_filter">City filter</string>
+    <string name="price_range">Price range</string>
+    <string name="surface_range">Surface range</string>
+    <string name="rooms_range">Rooms range</string>
+    <string name="minimum_photos">Minimum photos</string>
+    <string name="entry_date_range">Entry date range</string>
+    <string name="sale_date_range">Sale date range</string>
+    <string name="range_result">%1$s to %2$s</string>
+    <string name="realtor_filter">Realtor filter</string>
+    <string name="poi_type_filter">Point of interest type filter</string>
+    <string name="reset">Reset</string>
+    <string name="ok">OK</string>
+    <string name="cannot_make_map_requests">This device cannot make map requests.</string>
+    <string name="location_not_available">Location is not available… Check GPS settings.</string>
+
+    <!-- Loan calculator fragment -->
+    <string name="loan_calculator">Loan calculator</string>
+    <string name="loan_calculator_title">Fill in the information below to obtain live projections …</string>
+    <string name="loan_amount">Amount of the loan</string>
+    <string name="interest_rate">Interest rate</string>
+    <string name="insurance_rate">Insurance rate</string>
+    <string name="loan_duration">Loan duration (year)</string>
+    <string name="monthly_payment">Monthly payment</string>
+
 </resources>
