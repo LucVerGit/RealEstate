@@ -11,13 +11,13 @@ import java.util.*
  */
 @Entity(tableName = "address_table")
 data class Address(
-        @PrimaryKey
-        val addressId: String = UUID.randomUUID().toString(),
-        var zipCode: String? = null,
-        var city: String? = null,
-        var roadName: String? = null,
-        var number: String? = null,
-        var complement: String? = null,
+    @PrimaryKey
+    val addressId: String = UUID.randomUUID().toString(),
+    var zipCode: String? = null,
+    var city: String? = null,
+    var roadName: String? = null,
+    var number: String? = null,
+    var complement: String? = null,
 ) {
     override fun toString(): String {
         val string = StringBuilder().run {
