@@ -11,9 +11,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/average_margin"
-        android:layout_marginEnd="@dimen/average_margin"
+        android:layout_marginEnd="@dimen/small_margin"
         android:background="@drawable/ic_background_filter"
-        android:drawablePadding="@dimen/large_padding"
+        android:drawablePadding="@dimen/average_padding"
         android:padding="@dimen/average_padding"
         android:textAllCaps="false"
         android:textColor="@color/gray"
@@ -21,8 +21,8 @@
         android:visibility="gone"
         app:drawableEndCompat="@drawable/ic_close_24"
         app:drawableTint="@color/gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/property_list_recycler_view"
+        app:layout_constraintStart_toStartOf="@id/property_list_recycler_view"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
 
@@ -34,13 +34,24 @@
         android:overScrollMode="never"
         android:paddingStart="@dimen/average_padding"
         android:paddingTop="@dimen/average_padding"
-        android:paddingEnd="@dimen/average_padding"
+        android:paddingEnd="0dp"
         android:paddingBottom="@dimen/average_padding"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/detail_container_view"
+        app:layout_constraintHorizontal_weight="5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/filter_on_text_view"
         tools:listitem="@layout/cell_property" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/detail_container_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toEndOf="@id/property_list_recycler_view"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

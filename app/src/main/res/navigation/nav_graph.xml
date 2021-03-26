@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/propertyListFragment">
+
+    <!-- Property List Fragment -->
+    <fragment
+        android:id="@+id/propertyListFragment"
+        android:name="fr.LucasVerrier.realestatemanager.view.fragment.PropertyListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_property_list">
+
+        <action
+            android:id="@+id/action_propertyListFragment_to_propertyDetailFragment"
+            app:destination="@id/propertyDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_propertyListFragment_to_addPhotoFragment"
+            app:destination="@id/addPhotoFragment"
+            app:enterAnim="@anim/slide_in_down"
+            app:exitAnim="@anim/slide_out_up"
+            app:popEnterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+
+        <action
+            android:id="@+id/action_propertyListFragment_to_searchModalFragment"
+            app:destination="@id/searchModalFragment" />
+
+        <action
+            android:id="@+id/action_propertyListFragment_to_loanCalculatorFragment"
+            app:destination="@id/loanCalculatorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- Property Detail Fragment -->
+    <fragment
+        android:id="@+id/propertyDetailFragment"
+        android:name="fr.LucasVerrier.realestatemanager.view.fragment.PropertyDetailFragment"
+        android:label="@string/property_detail"
+        tools:layout="@layout/fragment_property_detail">
+
+        <action
+            android:id="@+id/action_propertyDetailFragment_to_addPhotoFragment"
+            app:destination="@id/addPhotoFragment"
+            app:enterAnim="@anim/slide_in_down"
+            app:exitAnim="@anim/slide_out_up"
+            app:popEnterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+
+    </fragment>
+
+    <!-- Add Photo Fragment -->
+    <fragment
+        android:id="@+id/addPhotoFragment"
+        android:name="fr.LucasVerrier.realestatemanager.view.fragment.AddPhotoFragment"
+        android:label="@string/new_property"
+        tools:layout="@layout/fragment_add_photo">
+
+        <argument
+            android:name="editMode"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_addPhotoFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <!-- Add Address Fragment -->
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="fr.LucasVerrier.realestatemanager.view.fragment.AddAddressFragment"
+        android:label="@string/new_property"
+        tools:layout="@layout/fragment_add_address">
+
+        <argument
+            android:name="editMode"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_addAddressFragment_to_addDetailFragment"
+            app:destination="@id/addDetailFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <!-- Add Detail Fragment -->
+    <fragment
+        android:id="@+id/addDetailFragment"
+        android:name="fr.LucasVerrier.realestatemanager.view.fragment.AddDetailFragment"
+        android:label="@string/new_property"
+        tools:layout="@layout/fragment_add_detail">
+
+        <argument
+            android:name="editMode"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_addDetailFragment_to_propertyListFragment"
+            app:destination="@id/propertyListFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/slide_out_down"
+            app:popEnterAnim="@anim/slide_in_down"
+            app:popExitAnim="@anim/slide_out_up"
+            app:popUpTo="@id/propertyListFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <!-- Search Modal Fragment -->
+    <dialog
+        android:id="@+id/searchModalFragment"
+        android:name="fr.LucasVerrier.realestatemanager.view.fragment.SearchModalFragment"
+        android:label="@string/search_properties"
+        tools:layout="@layout/fragment_search_modal" />
+
+    <!-- Map Fragment -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="fr.LucasVerrier.realestatemanager.view.fragment.MapFragment"
+        android:label="Map view"
+        tools:layout="@layout/fragment_map" />
+
+    <!-- Loan Calculator Fragment -->
+    <fragment
+        android:id="@+id/loanCalculatorFragment"
+        android:name="fr.LucasVerrier.realestatemanager.view.fragment.LoanCalculatorFragment"
+        android:label="@string/loan_calculator"
+        tools:layout="@layout/fragment_loan_calculator" />
+
+</navigation>
