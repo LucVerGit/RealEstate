@@ -49,7 +49,7 @@ This app supports:
 - [Mockito](https://site.mockito.org/)
 
 ## Execute and compile
-- You can fork this project or download the source code using the **Clone or download** button at the [root](https://github.com/LucasVerrier/RealEstateManager) of this repository.
+- You can fork this project or download the source code using the **Clone or download** button at the [root](https://github.com/byebyebabayaga/RealEstate) of this repository.
 - It's recommended using [Android studio](https://developer.android.com/studio/) IDE to build, edit, compile and execute.
 - Compile SDK version of the project : 30.
 - Minimum SDK version of the project : 19.
